@@ -1,0 +1,62 @@
+.custom-line {
+  border: none; 
+  height: 4px; 
+  background-color: #1C4B79; 
+  margin-top:0px;
+}
+
+.main {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+.heading {
+  color: white;
+  font-size: 34px;
+  margin-bottom: 15px; 
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  transition: transform 0.3s ease-in-out;
+  color: white; 
+}
+
+.icon:hover {
+  transform: scale(1.2); 
+}
+
+.whatsapp { color: #25D366; }
+.facebook { color: #1877F2; }
+.instagram { color: #E1306C; }
+.twitter { color: #1DA1F2; }
+
+.lastpart{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.last
+{
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.lastone
+{
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}

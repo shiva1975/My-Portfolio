@@ -1,0 +1,76 @@
+.nav-one {
+  background: transparent; /* Fully transparent */
+  width: 100%;
+  height: 50px;
+  color: white;
+  position: fixed;
+  padding: 12px; 
+  transition: background 0.3s ease; 
+}
+
+.nav-one.scrolled {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background on scroll */
+}
+
+.navbar-container {
+  margin-top: 0;
+}
+
+.nav-one ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.nav-one a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 24px;
+  position: relative; 
+  transition: color 0.3s ease; /
+}
+
+.nav-one a::after {
+  content: ''; 
+  display: block;
+  width: 100%; /* Full width of the link */
+  height: 2px; /* Height of the underline */
+  background-color: white; /* Color of the underline */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align to the left */
+  bottom: 0; /* Align to the bottom */
+  transform: scaleX(0); /* Initially hide the underline */
+  transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+.nav-one a:hover::after,
+.nav-one a:focus::after {
+  transform: scaleX(1); 
+}
+
+.nav-one a:hover {
+  background: linear-gradient(to left, #1E32BA, #E24646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;  */
+}
+
+
+@media (max-width: 768px) {
+  .nav-one ul {
+    flex-direction: column;
+    gap: 20px; 
+    margin-right: 0; 
+  }
+
+  .nav-one a {
+    font-size: 20px; 
+  }
+}
